@@ -1,13 +1,13 @@
 def SearchMinFromList(L):
     # Initialize minValue with the second element of the list
-    minValue = L[1]  # L[1] because the pseudocode starts with index 1
-    counter = 2  # Start from the second index (3rd element)
+    minValue = L[0]  # L[1] because the pseudocode starts with index 1
+    counter = 0  # Start from the second index (3rd element)
     
     # Iterate over the list starting from the second element (index 2)
     while counter < len(L):
-        v = L[counter]
-        if v < minValue:
-            minValue = v
+        L[counter]
+        if L[counter] < minValue:
+            minValue = L[counter]
         counter += 1  # Move to the next element
     
     return minValue
